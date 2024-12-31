@@ -1,6 +1,6 @@
 {
   "name": "yahoo-finance-lite",
-  "version": "0.1.1",
+  "version": "0.1.8",
   "description": "A lightweight library for fetching historical financial data from Yahoo Finance, designed for TypeScript users.",
   "main": "dist/services/yahooFinanceService.js",
   "types": "dist/services/yahooFinanceService.d.ts",
