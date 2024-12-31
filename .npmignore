@@ -1,0 +1,8 @@
+node_modules
+src
+tests
+coverage
+.eslintrc.*
+.prettierrc.*
+jest.config.*
+tsconfig.json
