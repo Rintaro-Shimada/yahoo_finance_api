@@ -9,10 +9,10 @@ npm install yahoo-finance-lite
 
 ## Usage
 ```javascript
-const { YahooFinanceService } = require("yahoo-finance-api");
+import {YahooFinanceService} from "yahoo-finance-lite";
+const yahooFinanceService = new YahooFinanceService(symbol);
 
-const service = new YahooFinanceService("AAPL");
-service.getHistorical("year", 40, "d", 1).then(data => console.log(data));
+yahooFinanceService.getHistorical("year", 40, "d", 1).then(data => console.log(data));
 ```
 
 ## Methods

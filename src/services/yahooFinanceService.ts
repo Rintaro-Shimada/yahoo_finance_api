@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { YahooFinanceError } from '../utils/exceptions';
 
 const PERIOD_TYPE_DAY = 'day';
 const PERIOD_TYPE_WEEK = 'week';
@@ -12,6 +11,13 @@ const FREQUENCY_TYPE_HOUR = 'h';
 const FREQUENCY_TYPE_DAY = 'd';
 const FREQUENCY_TYPE_WEEK = 'wk';
 const FREQUENCY_TYPE_MONTH = 'mo';
+
+class YahooFinanceError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'YahooFinanceError';
+  }
+}
 
 export class YahooFinanceService {
   private symbol: string;
